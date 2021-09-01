@@ -7,6 +7,7 @@ Following are the contents of this repository:
  <li>Python DS&ML Bootcamp ML TheoryCodes [<i>Beginner</i>] - course lesson notebooks from Pierian Data Python ML Bootcamp.</li>
  <li>Python DS&ML Bootcamp MiniProjects [<i>Beginner</i>] - course exercise notebooks from Pierian Data Python ML Bootcamp.</li>
  <li>Python DS & Algorithms (Jovian.ai) [<i>Beginner</i>] - course lesson notebooks from jovian.ai python algorithms.</li>
- <li>Online Sources (Blogs&Articles) [<i>Beginner</i>] - Multiple notebooks based on self learning from various blogs(original sources mentioned).</li>
+ <li>Online Sources (Blogs&Articles&Youtube) [<i>Beginner</i>] - Multiple notebooks based on self learning from various blogs(original sources mentioned).</li>
+ <li>Online Sources (References&EtCetera) [<i>Intermediate:sunglasses:</i>] - Notebooks from multiple online meetups attended, like W&B or a researcher introducing some fascinating stuffs:heart_eyes: and walkthroughs</li>
  <li>Google ML Crash Course [<i>Intermediate:fire:</i>] - Notebooks from Google ML Crash Course, extensively uses tensorflow. Not meant for kids!!:sunglasses:</li>
 </ul>
