@@ -1,15 +1,19 @@
 This folder contains code to perform Hyperparameter Tuning using following techniques/libraries:
-01. Grid Search CV
-02. Random Search CV
-03. Gird/Random Search with sklearn Pipelines
-04. Bayesian Optimization using SkOpt
-05. HyperOpt
-06. Optuna
+<ul>
+  <li>Grid Search CV</li>
+  <li>Random Search CV</li>
+  <li>Gird/Random Search with sklearn Pipelines</li>
+  <li>Bayesian Optimization using SkOpt</li>
+  <li>HyperOpt</li>
+  <li>Optuna</li>
+</ul>
 
-The dataset is for Mobile Price Classification and is available on Kaggle: https://www.kaggle.com/datasets/iabhishekofficial/mobile-price-classification/data
-The initial version of code is based on a youtube video live coding: https://www.youtube.com/watch?v=5nYqK-HaoKY
+<br>The dataset is for Mobile Price Classification and is available on Kaggle: https://www.kaggle.com/datasets/iabhishekofficial/mobile-price-classification/data
+<br>The initial version of code is based on a youtube video live coding: https://www.youtube.com/watch?v=5nYqK-HaoKY
 
-Next Steps to implement:
--- Put the functions in a utils.py code.
--- Add logging to external files through decorators.
--- Provide option to pass input parameters while calling a main model train function.
+<br>Next Steps to implement:
+<ul>
+  <li>Put the functions in a utils.py code.</li>
+  <li>Add logging to external files through decorators.</li>
+  <li>Provide option to pass input parameters while calling a main model train function.</li>
+</ul>
