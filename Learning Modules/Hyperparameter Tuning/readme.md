@@ -8,12 +8,12 @@ This folder contains code to perform Hyperparameter Tuning using following techn
   <li>Optuna</li>
 </ul>
 
-<br>The dataset is for Mobile Price Classification and is available on Kaggle: https://www.kaggle.com/datasets/iabhishekofficial/mobile-price-classification/data
-<br>The initial version of code is based on a youtube video live coding: https://www.youtube.com/watch?v=5nYqK-HaoKY
-
 <br>Next Steps to implement:
 <ul>
   <li>Put the functions in a utils.py code.</li>
   <li>Add logging to external files through decorators.</li>
   <li>Provide option to pass input parameters while calling a main model train function.</li>
 </ul>
+
+<br>The dataset is for Mobile Price Classification and is available on Kaggle: https://www.kaggle.com/datasets/iabhishekofficial/mobile-price-classification/data
+<br>The initial version of code is based on a youtube video live coding: https://www.youtube.com/watch?v=5nYqK-HaoKY
