@@ -1,7 +1,7 @@
 
 The dataset used for this work is from a Kaggle competition "<b>Mechanisms of Action (MoA) Prediction</b>". Thus is a multilabel classification task with 876 features and 206 targets.
 <br>Data Source : https://www.kaggle.com/c/lish-moa
-
+<br><br>This learning module is based on the youtube video (+modifications for efficiency on gpu) : https://www.youtube.com/watch?v=4MK_OJJ82YI
 
 <br>Terminal Commands to prepare the environment with optuna, pytorch and cuda installed:
 
