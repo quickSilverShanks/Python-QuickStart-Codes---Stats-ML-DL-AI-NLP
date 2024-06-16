@@ -5,12 +5,12 @@ import optuna
 
 import utils
 
-# low value of below constants are to facilitate quick running of the code
+# low value of below constants are to facilitate quick running of the code, check the comments
 DEVICE = "cuda"
 EPOCHS = 200  # keep this 1000 or even higher for better results
 OPTUNA_TRIALS = 4 # keep this 20 or even higher for better results
 BATCH_SIZE = 8192 # adjust this as per available cuda cores or ram size. Also, experiments indicated quicker progress at 8192 as compared to 16384.
-
+EPOCH_LOG_INTERVAL = 25 # higher value for less frequent log prints
 
 
 def prep_data():
@@ -58,7 +58,7 @@ def run_training(fold, params, save_model=False):
     model = utils.Model(
         nfeatures = xtrain.shape[1],
         ntargets = ytrain.shape[1],
-        nlayers = params["num_layers"],
+        nlayers = params["num_layer"],
         hidden_size = params["hidden_size"],
         dropout = params["dropout"]
     )
@@ -73,8 +73,8 @@ def run_training(fold, params, save_model=False):
     for epoch in range(EPOCHS):
         train_loss = eng.train(train_loader)
         valid_loss = eng.evaluate(valid_loader)
-        if epoch%20 == 0:
-            print(f"[Fold:{fold}, Epoch:{epoch}/{EPOCHS}] : Train Loss:{train_loss}, Val Loss:{valid_loss}")
+        if (epoch+1)%EPOCH_LOG_INTERVAL == 0:
+            print(f"[Fold:{fold+1}, Epoch:{epoch+1}/{EPOCHS}] : Train Loss:{train_loss}, Val Loss:{valid_loss}")
         if valid_loss < best_loss:
             best_loss = valid_loss
             early_stopping_counter = 0
@@ -92,7 +92,7 @@ def run_training(fold, params, save_model=False):
 
 def objective(trial):
     params = {
-        "num_layers": trial.suggest_int("num_layer", 1,4),
+        "num_layer": trial.suggest_int("num_layer", 1,4),
         "hidden_size": trial.suggest_int("hidden_size", 16, 128),
         "dropout": trial.suggest_float("dropout", 0.1, 0.7),
         "learning_rate": trial.suggest_float("learning_rate", 1e-6, 1e-3, log=True)
@@ -123,3 +123,10 @@ if __name__ == "__main__":
         scores += scr
     
     print("Avg. Score for 5 folds:", scores / 5)
+
+# Print Outputs:
+
+# Best Trial:
+# [0.21970292031764985]
+# {'num_layer': 1, 'hidden_size': 109, 'dropout': 0.1350424938862769, 'learning_rate': 6.0074165060706274e-05}
+# Avg. Score for 5 folds: 0.2188609778881073
