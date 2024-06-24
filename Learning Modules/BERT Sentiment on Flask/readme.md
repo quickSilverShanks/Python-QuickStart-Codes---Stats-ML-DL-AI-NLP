@@ -12,7 +12,6 @@ The dataset used for this work is from Kaggle "<b>IMDB Dataset of 50K Movie Revi
     <li>Once its running, go to this link in browser to view the prediction : http://127.0.0.1:9999/predict</li>
     <li>Type any sentence in the url as shown here for its sentiment prediction : http://127.0.0.1:9999/predict?sentence=this repo is amazing</li>
 </ul>
-![image](https://github.com/quickSilverShanks/Python-QuickStart-Codes---Stats-ML-DL-AI-NLP/assets/31253156/d5e6902a-d845-428a-a59c-86214314d440)
 
 
 <br><br>Future Improvements:
