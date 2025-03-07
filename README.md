@@ -14,5 +14,7 @@ Following are the contents of this repository:
  <li>Google ML Crash Course [<i>Intermediate</i>:fire:] - Notebooks from Google ML Crash Course, extensively uses tensorflow. Not meant for beginners!!:sunglasses:</li>
  <li>NLP Books&EtCetera [<i>Intermediate</i>:fire:] - Notebooks from the book 'NLP with Transformers':speech_balloon::speech_balloon: & other NLP self study codes.</li>
  <li>Reinforcement Learning [<i>Intermediate to Advanced</i>:boom::boom:] - Codes and Concepts from Deep Reinforcment Learning:robot: Course from HuggingFace and other RL based projects and codes.</li>
+ <li>LLM Agents (HuggingFace) [<i>Intermediate to Advanced</i>:boom::boom:] - Codes and Concepts from HuggingFace Agents Course.</li>
+ <li>GenAI (Kaggle) [<i>Intermediate to Advanced</i>] - Hands-on code notebooks and reference research papers from Kaggle 5 day Intensive GenAI series.</li>
  <li>ML for Audio and Speech (HuggingFace) [<i>Intermediate</i>:fire:] - Codes and Concepts from HuggingFace Audio Course.</li>
 </ul>
